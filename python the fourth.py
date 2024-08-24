@@ -1,0 +1,25 @@
+# Write your code here :-)
+import time
+number = int(input("Please enter a number:)"))
+print("Wow," , number , "is a pretty nice number:!")
+time.sleep(1)
+number2 = int(input("Can I get a anothor:?"))
+totalnumber = number + number2
+print("Now if i've done the math corrct , they should both equal" , totalnumber , "!")
+time.sleep(1)
+print("YAY :D")
+time.sleep(1)
+number3 = int(input("Please!Just one more number!!!"))
+totalnumber2 = totalnumber + number3
+print("And a final sum of..." , totalnumber2 , "!")
+time.sleep(3)
+print("Huh, i'm pretty sure i can do more...")
+time.sleep(2)
+number4 = int(input("How about one more number before I calcuate the mean of them all:"))
+totalaverage = (totalnumber2+ number4) / 4
+print("And at long last, four sensational numbers added and divided by their own amount, it's" , totalaverage , "!")
+time.sleep(1)
+print("YAY :D")
+time.sleep(1)
+print("Huh all this mathwork makes me hungry for some fresh ones and zeros at the Masterant!Maybe you and your friends would like to join!")
+bill = int(input("But frist werwe going to need to info:How much in total are your friends (and you) willing to pay for our meal! £"))
