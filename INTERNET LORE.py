@@ -18,4 +18,4 @@ You wake up exicited , knowing that indeed today is your 16th birthday.But at th
 darn alarm is still busted."""
 sleep(20)
 input("""Now you could go and shout at your sister next door, for not waking you on time again(A).Or you could not waste time on that, and check the time to see how long you
-have left to get ready(B)
+have left to get ready(B)""")
