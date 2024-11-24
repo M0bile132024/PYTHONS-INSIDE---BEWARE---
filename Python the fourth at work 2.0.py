@@ -54,3 +54,4 @@ if poundtransferal >= 50 and poundtransferal <= 60:
 else:
     print("Uh oh! The £s you'd inputted are not within range. Please proceed to restart the program.")
     time.sleep(3)
+    quit()
