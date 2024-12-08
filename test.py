@@ -1,6 +1,5 @@
-# Write your code here :-)
-word = "rice"
-print(word[0])
+import AI_stuff as PYS
+                  
 
 
 
