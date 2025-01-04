@@ -1,6 +1,5 @@
 import time
 import random
-import turtle
 def waiting_dots(amount_of_dots = 3,waiting_time = 1):
     for i in range(amount_of_dots):
         print(".")
@@ -395,7 +394,9 @@ def SUBSWAY(sizes,bread_type,fillings,location):
     }
     location_list = list(location_dict)
     print("|Size", sizes_list[sizes] , "Price" , f"£{sizes_dict[sizes_list[sizes]]}" , "\n","Bread type", bread_type_list[bread_type] , "Price" , f"£{bread_type_dict[bread_type_list[bread_type]]}" , "\n","Fillings", fillings_list[fillings] , "Price" , f"£{fillings_dict[fillings_list[fillings]]}" , "\n" , "Location", location_list[location] , "Percentage change" , f"{(location_dict[location_list[location]]-1)*100:.1f}%" , "\n", "Total cost" , f"£{((sizes_dict[sizes_list[sizes]]+bread_type_dict[bread_type_list[bread_type]]+fillings_dict[fillings_list[fillings]])*location_dict[location_list[location]]):.2f}",sep="|")
-    
+def Dialogue(words):
+    print(words)
+    time.sleep(words.split()*0.6)   
 
     
     

@@ -40,7 +40,7 @@ def Double_Authentication():
     pin_attempt = 0
     pin_attempt2 = 0
     pin = random.randint(1,10000)
-    while pin_attempt != pin or pin-attempt2 != pin:
+    while pin_attempt != pin or pin_attempt2 != pin:
         random_myserty = random.randint(1,2)
         print("""𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝘁𝗵𝗲 𝗣𝘆𝘁𝗵𝗼𝗻𝗶𝗰 𝗔𝘂𝘁𝗵𝗼𝗿𝗶𝘁𝗲𝘀 𝗗𝗼𝘂𝗯𝗹𝗲 𝗔𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝘀𝘆𝘀𝘁𝗲𝗺,
 𝘁𝗵𝗲 𝗻𝗲𝘄𝘀𝗲𝘁, 𝗮𝗻𝗱 𝗯𝗲𝘀𝘁 𝗼𝗳 𝗵𝗶𝘀 𝗶𝗻𝘃𝗲𝗻𝘁𝗶𝗼𝗻𝘀!""")
