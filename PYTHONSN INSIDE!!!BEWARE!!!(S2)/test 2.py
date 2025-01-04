@@ -1,3 +1,5 @@
-import Python_the_Functions as PTF
-PTF.Dungeon_BMI_Checker()
+from Python_the_Functions import Double_Authentication as DA
+DA()
+
+
 

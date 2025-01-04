@@ -1,10 +1,93 @@
 # Python the 7th
 #Task 1:The Biggest of them all
-import time 
+import time
+import random 
 def waiting_dots(amount_of_dots = 3,waiting_time = 1):
     for i in range(amount_of_dots):
         print(".")
         time.sleep(waiting_time)
+def PT8th_Ice_cream_truck():
+    print("Alright,now we're here, you see that icecream truck?")
+    time.sleep(3)
+    print("The fella in there knows me well, so when you walk up to him...")
+    ice_cream_container_dict = {
+        1:"Cone",
+        2:"Bowl",
+        3:"Cup",
+        4:"Bucket"
+    }
+    ice_cream_scoops_dict = {
+        1:"1 scoop",
+        2:"2 scoops",
+        3:"3 scoops",
+        4:"4 scoops",
+        5:"5 scoops"
+    }
+    ice_cream_toppings_dict = {
+        1:"some flakes",
+        2:"some chocolate sprinkles",
+        3:"some strawberry coulis",
+        4:"Some Oreo bits",
+        5:"some marshmellows",
+        6:"whipped cream",
+        7:"some sprinkles",
+        8:"some damm toffe"
+    }
+    ice_cream_container_price = {
+        1:0.5,
+        2:0.8,
+        3:1.1,
+        4:1.4
+    }
+    ice_cream_scoops_price = {
+        1:1,
+        2:2,
+        3:3,
+        4:4,
+        5:5
+    }
+    ice_cream_toppings_price = {
+        1:0.4,
+        2:0.3,
+        3:0.6,
+        4:0.9,
+        5:1,
+        6:1.2,
+        7:0.2,
+        8:0.1
+    }
+    random_order_list = [ice_cream_container_dict.get(random.randint(1,len(ice_cream_container_dict))),ice_cream_scoops_dict.get(random.randint(1,len(ice_cream_scoops_dict))),ice_cream_toppings_dict.get(random.randint(1,len(ice_cream_toppings_dict)))]
+    waiting_dots()
+    print(random_ice_cream_list)
+    print("Now move, quick!!!")
+    print("And be careful, a lot mess up here....")
+    time.sleep(3)
+    while checkout[0:3] != random_order_list:
+        order_list = []
+        checkout_list = []
+        total_price = 0
+        input("𝐻𝑒𝓁𝓁𝑜,𝓌𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒫𝓎𝓉𝒽𝑜𝓃 𝒯𝒽𝑒 𝟪𝓉𝒽 Strawberry 𝐼𝒸𝑒𝒸𝓇𝑒𝒶𝓂 𝓉𝓇𝓊𝒸𝓀, 𝓌𝒽𝒶𝓉 𝒸𝒶𝓃 𝐼 𝒹𝑜 𝒻𝑜𝓇 𝓎𝑜𝓊!")
+        print("𝒜𝓁𝓇𝒾𝑔𝒽𝓉, 𝓌𝒽𝒶𝓉 𝒸𝑜𝓃𝓉𝒶𝒾𝓃𝑒𝓇 𝒶𝓇𝑒 𝓌𝑒 𝓉𝒶𝓁𝓀𝒾𝓃𝑔(𝓉𝓎𝓅𝑒 𝓃𝓊𝓂𝒷𝑒𝓇):")
+        order_list.append(int(input(ice_cream_container_dict)))
+        print("𝒜𝓃𝒹 𝒽𝑜𝓌 𝓂𝒶𝓃𝓎 𝓈𝒸𝑜𝑜𝓅𝓈 𝓎𝑜𝓊 𝓈𝒶𝓎(𝓉𝓎𝓅𝑒 𝓃𝓊𝓂𝒷𝑒𝓇):")
+        order_list.append(int(input(ice_cream_scoops_dict)))
+        print("𝐹𝒾𝓃𝒶𝓁𝓎, 𝑜𝓃𝑒 𝒻𝓇𝑜𝓂 𝓂𝓎 (𝒶𝓁𝓂𝑜𝓈𝓉) 𝒶𝓂𝒶𝓏𝒾𝓃𝑔 𝑜𝒸𝓉𝓊𝓅𝓁𝑒 𝓉𝑜𝓅𝓅𝒾𝓃𝑔 𝓈𝑒𝓁𝑒𝒸𝓉𝒾𝑜𝓃:(𝓉𝓎𝓅𝑒 𝓃𝓊𝓂𝒷𝑒𝓇):")
+        order_list.append(int(input(ice_cream_toppings_dict)))
+        print("Ｐｒｏｃｅｓｓｉｎｇ")
+        checkout_list.append(ice_cream_container_dict.get(order_list[0]))#0(Assortments)
+        checkout_list.append(ice_cream_scoops_dict.get(order_list[1]))#1
+        checkout_list.append(ice_cream_toppings_dict.get(order_list[2]))#2
+        checkout_list.append(ice_cream_container_price.get(order_list[0]))#3(Prices)
+        checkout_list.append(ice_cream_scoops_price.get(order_list[1]))#4
+        checkout_list.append(ice_cream_toppings_price.get(order_list[2]))#5
+        total_price = (checkout_list[3] + checkout_list[4] + checkout_list[5]) * 1.2
+        time.sleep(3)
+        print("Ｓｕｃｅｓｓｆｕｌｌｙ ｐｒｏｃｅｓｓｅｄ！")
+        print("Ice cream container",checkout_list[0],"Number of scoops",checkout_list[1],"Topping",checkout_list[2],"Total price+VAT(£/$)",total_price,sep="|")
+        time.sleep(5)
+        print("𝒢𝑜𝑜𝒹, 𝒾𝓈𝓃'𝓉 𝒾𝓉")
+        time.sleep(5)
+        print("𝐼 𝒷𝑒𝓉 𝓎𝑜𝓊 𝒷𝒶𝒹𝓁𝓎 𝓌𝒶𝓃𝓉 𝒶𝓃𝑜𝓉𝒽𝑒𝓇 𝑜𝓃𝑒....")
 print("Hi mate,i'm Python the seventh and I work in a dungeon....")
 time.sleep(5)
 numbers_list = []
@@ -379,8 +462,49 @@ def Dungeon_BMI_Checker():
             print(Advice)
         continue
 Dungeon_BMI_Checker()
-    
-    
+'''Task 6:The Final Icecream
+Create a computer program to let the customer pick up their options for their ice cream.  
+
+ 
+
+The customer should be able to specify: 
+
+ 
+
+Whether they would like their ice cream to be served in a cup (50p) or on a cone (80p) 
+
+How many scoops (£1 per scoop) they would like to order (between 1 and 4) 
+
+Whether they would like to add a flake (40p) 
+
+Whether they would like to add some chocolate sprinkle (30p) 
+
+Whether they would like to add a strawberry coulis (60p) 
+
+ 
+
+The program will then output the order and calculate the total price '''
+time.sleep(1)
+print("*gunshot*")
+waiting_dots()   
+print("Huh, forgot I had this...")
+time.sleep(3)
+print("Well then, no time to lose, onto the yard!")
+PT8th_Ice_cream_truck()
+waiting_dots()
+time.sleep(5)
+print("('_')")
+time.sleep(5)
+print("(._.)")
+time.sleep(6)
+print("𝒩𝑜𝓉 𝓌𝒽𝒶𝓉 𝐼 𝑒𝓍𝓅𝑒𝒸𝓉𝑒𝒹 𝓉𝑜𝒹𝒶𝓎 𝒷𝓊𝓉-")
+time.sleep(1)
+print("It will have to do, now MOVE!!!!")
+time.sleep(5)
+waiting.dots()
+print("To\nBe\nContinued...")
+
+
     
             
     
