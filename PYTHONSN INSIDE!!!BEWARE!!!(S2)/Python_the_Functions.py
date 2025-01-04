@@ -222,3 +222,174 @@ def Dungeon_BMI_Checker():
             time.sleep(3)
             print(Advice)
         continue
+def PT8th_Ice_cream_truck():
+    print("Alright,now we're here, you see that icecream truck?")
+    time.sleep(3)
+    print("The fella in there knows me well, so when you walk up to him...")
+    ice_cream_container_dict = {
+        1:"Cone",
+        2:"Bowl",
+        3:"Cup",
+        4:"Bucket"
+    }
+    ice_cream_scoops_dict = {
+        1:"1 scoop",
+        2:"2 scoops",
+        3:"3 scoops",
+        4:"4 scoops",
+        5:"5 scoops"
+    }
+    ice_cream_toppings_dict = {
+        1:"some flakes",
+        2:"some chocolate sprinkles",
+        3:"some strawberry coulis",
+        4:"Some Oreo bits",
+        5:"some marshmellows",
+        6:"whipped cream",
+        7:"some sprinkles",
+        8:"some damm toffe"
+    }
+    ice_cream_container_price = {
+        1:0.5,
+        2:0.8,
+        3:1.1,
+        4:1.4
+    }
+    ice_cream_scoops_price = {
+        1:1,
+        2:2,
+        3:3,
+        4:4,
+        5:5
+    }
+    ice_cream_toppings_price = {
+        1:0.4,
+        2:0.3,
+        3:0.6,
+        4:0.9,
+        5:1,
+        6:1.2,
+        7:0.2,
+        8:0.1
+    }
+    random_order_list = [ice_cream_container_dict.get(random.randint(1,len(ice_cream_container_dict))),ice_cream_scoops_dict.get(random.randint(1,len(ice_cream_scoops_dict))),ice_cream_toppings_dict.get(random.randint(1,len(ice_cream_toppings_dict)))]
+    waiting_dots()
+    print(random_ice_cream_list)
+    print("Now move, quick!!!")
+    print("And be careful, a lot mess up here....")
+    time.sleep(3)
+    while checkout[0:3] != random_order_list:
+        order_list = []
+        checkout_list = []
+        total_price = 0
+        input("𝐻𝑒𝓁𝓁𝑜,𝓌𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝒫𝓎𝓉𝒽𝑜𝓃 𝒯𝒽𝑒 𝟪𝓉𝒽 Strawberry 𝐼𝒸𝑒𝒸𝓇𝑒𝒶𝓂 𝓉𝓇𝓊𝒸𝓀, 𝓌𝒽𝒶𝓉 𝒸𝒶𝓃 𝐼 𝒹𝑜 𝒻𝑜𝓇 𝓎𝑜𝓊!")
+        print("𝒜𝓁𝓇𝒾𝑔𝒽𝓉, 𝓌𝒽𝒶𝓉 𝒸𝑜𝓃𝓉𝒶𝒾𝓃𝑒𝓇 𝒶𝓇𝑒 𝓌𝑒 𝓉𝒶𝓁𝓀𝒾𝓃𝑔(𝓉𝓎𝓅𝑒 𝓃𝓊𝓂𝒷𝑒𝓇):")
+        order_list.append(int(input(ice_cream_container_dict)))
+        print("𝒜𝓃𝒹 𝒽𝑜𝓌 𝓂𝒶𝓃𝓎 𝓈𝒸𝑜𝑜𝓅𝓈 𝓎𝑜𝓊 𝓈𝒶𝓎(𝓉𝓎𝓅𝑒 𝓃𝓊𝓂𝒷𝑒𝓇):")
+        order_list.append(int(input(ice_cream_scoops_dict)))
+        print("𝐹𝒾𝓃𝒶𝓁𝓎, 𝑜𝓃𝑒 𝒻𝓇𝑜𝓂 𝓂𝓎 (𝒶𝓁𝓂𝑜𝓈𝓉) 𝒶𝓂𝒶𝓏𝒾𝓃𝑔 𝑜𝒸𝓉𝓊𝓅𝓁𝑒 𝓉𝑜𝓅𝓅𝒾𝓃𝑔 𝓈𝑒𝓁𝑒𝒸𝓉𝒾𝑜𝓃:(𝓉𝓎𝓅𝑒 𝓃𝓊𝓂𝒷𝑒𝓇):")
+        order_list.append(int(input(ice_cream_toppings_dict)))
+        print("Ｐｒｏｃｅｓｓｉｎｇ")
+        checkout_list.append(ice_cream_container_dict.get(order_list[0]))#0(Assortments)
+        checkout_list.append(ice_cream_scoops_dict.get(order_list[1]))#1
+        checkout_list.append(ice_cream_toppings_dict.get(order_list[2]))#2
+        checkout_list.append(ice_cream_container_price.get(order_list[0]))#3(Prices)
+        checkout_list.append(ice_cream_scoops_price.get(order_list[1]))#4
+        checkout_list.append(ice_cream_toppings_price.get(order_list[2]))#5
+        total_price = (checkout_list[3] + checkout_list[4] + checkout_list[5]) * 1.2
+        time.sleep(3)
+        print("Ｓｕｃｅｓｓｆｕｌｌｙ ｐｒｏｃｅｓｓｅｄ！")
+        print("Ice cream container",checkout_list[0],"Number of scoops",checkout_list[1],"Topping",checkout_list[2],"Total price+VAT(£/$)",total_price,sep="|")
+        time.sleep(5)
+        print("𝒢𝑜𝑜𝒹, 𝒾𝓈𝓃'𝓉 𝒾𝓉")
+        time.sleep(5)
+        print("𝐼 𝒷𝑒𝓉 𝓎𝑜𝓊 𝒷𝒶𝒹𝓁𝓎 𝓌𝒶𝓃𝓉 𝒶𝓃𝑜𝓉𝒽𝑒𝓇 𝑜𝓃𝑒....")
+def The_Junkie_Gas_Station():
+    max_gas = int(input("𝑾𝒆𝒍𝒐𝒄𝒎𝒆 𝒕𝒐 𝒎𝒆 𝒈𝒂𝒔 𝒔𝒕𝒂𝒕𝒊𝒐𝒏,𝒉𝒐𝒘 𝒎𝒖𝒄𝒉 𝒈𝒂𝒔 𝒚𝒐𝒖'𝒅 𝒏𝒆𝒆𝒅...(Gallons):"))
+    gas_put_in = 0
+    gas_dose = 0
+    dose = 1
+    while gas_put_in != max_gas:
+        if gas_put_in < max_gas:
+            gas_dose = int(input(f"Alright, how much do you want to pump for your {dose}st/nd/rd/th dose(1-50 gallons):"))
+            while gas_dose > 50 or gas_dose < 1:
+                gas_dose = int(input(f"Alright,now that's an invalid dose, let's try that agian(1-50 gallons):"))
+            Processing("Pumping the gas",3,round((gas_dose/10)/3,1))
+            gas_put_in += gas_dose
+            print(f"\n{dose}st/nd/rd/th dose sucessfully pumped....\nYou now have {gas_put_in} gallons of gas in your tank")
+            dose += 1
+        if gas_put_in > max_gas:
+            gas_dose = int(input(f"Alright, how much do you want to unpump for your {dose}st/nd/rd/th dose(1-50 gallons):"))
+            while gas_dose > 50 or gas_dose < 1:
+                gas_dose = int(input(f"Alright,now that's an invalid dose, let's try that agian(1-50 gallons):"))
+            Processing("Unpumping the gas",3,round((gas_dose/10)/3,1))
+            gas_put_in -= gas_dose
+            print(f"\n{dose}st/nd/rd/th dose sucessfully pumped....\nYou now have {gas_put_in} gallons of gas in your tank")
+            dose += 1
+    print("Thanks for refuelling at Junkie's...or whatever...")
+    return dose
+def Double_Authentication():
+    pin_attempt = 0
+    pin_attempt2 = 0
+    pin = random.randint(1,10000)
+    while pin_attempt != pin or pin-attempt2 != pin:
+        random_myserty = random.randint(1,2)
+        print("""𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝘁𝗵𝗲 𝗣𝘆𝘁𝗵𝗼𝗻𝗶𝗰 𝗔𝘂𝘁𝗵𝗼𝗿𝗶𝘁𝗲𝘀 𝗗𝗼𝘂𝗯𝗹𝗲 𝗔𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝘀𝘆𝘀𝘁𝗲𝗺,
+𝘁𝗵𝗲 𝗻𝗲𝘄𝘀𝗲𝘁, 𝗮𝗻𝗱 𝗯𝗲𝘀𝘁 𝗼𝗳 𝗵𝗶𝘀 𝗶𝗻𝘃𝗲𝗻𝘁𝗶𝗼𝗻𝘀!""")
+        pin_attempt = int(input("𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝗮 𝗽𝗶𝗻:"))
+        pin_attempt2 = int(input("𝗣𝗹𝗲𝗮𝘀𝗲 𝗲𝗻𝘁𝗲𝗿 𝗽𝗶𝗻 𝗮𝗴𝗮𝗶𝗻 𝘁𝗼 𝘃𝗲𝗿𝗶𝗳𝘆:"))
+        Processing("𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴")
+        if pin_attempt > pin or pin_attempt < pin or pin_attempt2 > pin or pin_attempt2 < pin:
+            print("𝗜𝗡𝗖𝗢𝗥𝗥𝗘𝗖𝗧 𝗣𝗜𝗡!𝗣𝗟𝗘𝗔𝗦𝗘 𝗥𝗘𝗔𝗧𝗧𝗘𝗠𝗣𝗧 𝘃")
+            if random_myserty == 1:
+                lower_higher = "low-" if pin_attempt > pin else  "high-" if pin_attempt < pin else "Second one hig-" if pin_attempt2 > pin else "Second one lo-" if pin_attempt2 < pin else "ERROR 101:Unintentional Design"
+                time.sleep(3)
+                print("Pssth")
+                time.sleep(3)
+                print(f"It's {lower_higher}")
+                print("𝗥𝗼𝗴𝘂𝗲 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻 𝘁𝗲𝗿𝗺𝗶𝗻𝗮𝘁𝗲𝗱.")
+                time.sleep(1)
+    print(f"𝗖𝗢𝗥𝗥𝗘𝗖𝗧 𝗣𝗜𝗡, 𝘆𝗼𝘂 𝗺𝗮𝘆 𝗲𝗻𝘁𝗲𝗿 𝗮𝘀 𝗣𝘆𝘁𝗵𝗼𝗻𝗶𝗰 𝗔𝘀𝘀𝗼𝗰𝗶𝗮𝘁𝗲{random.randint(1,10000)}!!")
+def SUBSWAY(sizes,bread_type,fillings,location):
+    sizes_dict = {
+        "3-inch":1.45,
+        "6-inch":1.65,
+        "9-inch":1.85,
+        "MEGA 12-inch":2.05
+    }
+    sizes_list = list(sizes_dict.keys())
+
+    bread_type_dict = {
+        "Plain":0.40,
+        "Wheat":0.65,
+        "Oat":0.90,
+        "Barley":1.05,
+        "Garlic":1.30,
+        "Cheese & herbs":1.55,
+        "Italian":1.80
+    }
+    bread_type_list = list(bread_type_dict)
+    fillings_dict = {
+        "Cheese & Tomato":0.95,
+        "Italian Bacon & Peperoni":1.10,
+        "Tuna & Mayo":0.95,
+        "Turkey & Ham":1.35,
+        "Chicken Teriyaki":1.40,
+        "Steak & Cheese":1.95,
+        "Hunted snake":16.09,
+        "Hunted chicken":2.95,
+        "Meat-feast":6.99
+    }
+    fillings_list = list(fillings_dict)
+    location_dict = {
+        "Restaurant":1.05,
+        "Takeway/Premium member!!!":1,
+        "Drive-thru":1.025
+    }
+    location_list = list(location_dict)
+    print("|Size", sizes_list[sizes] , "Price" , f"£{sizes_dict[sizes_list[sizes]]}" , "\n","Bread type", bread_type_list[bread_type] , "Price" , f"£{bread_type_dict[bread_type_list[bread_type]]}" , "\n","Fillings", fillings_list[fillings] , "Price" , f"£{fillings_dict[fillings_list[fillings]]}" , "\n" , "Location", location_list[location] , "Percentage change" , f"{(location_dict[location_list[location]]-1)*100:.1f}%" , "\n", "Total cost" , f"£{((sizes_dict[sizes_list[sizes]]+bread_type_dict[bread_type_list[bread_type]]+fillings_dict[fillings_list[fillings]])*location_dict[location_list[location]]):.2f}",sep="|")
+    
+
+    
+    
+            
