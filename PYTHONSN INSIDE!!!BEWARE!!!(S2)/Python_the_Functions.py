@@ -281,11 +281,11 @@ def PT8th_Ice_cream_truck():
     }
     random_order_list = [ice_cream_container_dict.get(random.randint(1,len(ice_cream_container_dict))),ice_cream_scoops_dict.get(random.randint(1,len(ice_cream_scoops_dict))),ice_cream_toppings_dict.get(random.randint(1,len(ice_cream_toppings_dict)))]
     waiting_dots()
-    print(random_ice_cream_list)
+    print(random_order_list)
     print("Now move, quick!!!")
     print("And be careful, a lot mess up here....")
     time.sleep(3)
-    while checkout[0:3] != random_order_list:
+    while checkout_list[0:3] != random_order_list:
         order_list = []
         checkout_list = []
         total_price = 0
@@ -339,7 +339,7 @@ def Double_Authentication():
     pin_attempt = 0
     pin_attempt2 = 0
     pin = random.randint(1,10000)
-    while pin_attempt != pin or pin-attempt2 != pin:
+    while pin_attempt != pin or pin_attempt2 != pin:
         random_myserty = random.randint(1,2)
         print("""𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 𝘁𝗵𝗲 𝗣𝘆𝘁𝗵𝗼𝗻𝗶𝗰 𝗔𝘂𝘁𝗵𝗼𝗿𝗶𝘁𝗲𝘀 𝗗𝗼𝘂𝗯𝗹𝗲 𝗔𝘂𝘁𝗵𝗲𝗻𝘁𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝘀𝘆𝘀𝘁𝗲𝗺,
 𝘁𝗵𝗲 𝗻𝗲𝘄𝘀𝗲𝘁, 𝗮𝗻𝗱 𝗯𝗲𝘀𝘁 𝗼𝗳 𝗵𝗶𝘀 𝗶𝗻𝘃𝗲𝗻𝘁𝗶𝗼𝗻𝘀!""")
