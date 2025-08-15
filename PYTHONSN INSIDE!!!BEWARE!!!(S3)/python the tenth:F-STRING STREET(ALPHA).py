@@ -1,5 +1,6 @@
 import time
 import random
+from Python_the_second_Func import The_Bar
 #Python_the_Tenth:F-string Street alpha 1.5
 #Author:M0bile132022
 #Date:08/08/2025
@@ -11,6 +12,88 @@ def Processing(Processing="Processing",amount_of_dots = 3,waiting_time = 1):
     for i in range(amount_of_dots):
         print(".",end="")
         time.sleep(waiting_time)
+
+qa1 = None
+def The_Infinite_Inn():
+    print("You and your crew enter the inn, which is dimly lit, with a warm fire burning in the corner.")
+    waiting_dots()
+    print("Sixth:For an inn, this ain't that bad")
+    waiting_dots()
+    if qa1 == "A2":
+        print("Seventh:Yeah it's outside was clearly telling a different story...")
+    elif qa1 == "A3":
+        print("Seventh:Yeah, I mean, I guess it's not that bad, but I still don't trust this likes of this place...")
+    else:
+        print("Seventh:Yeah, perhaps your right, it's looking rather cozy in here.")
+    waiting_dots()
+    print("You notice a sign on the wall that reads:")
+    waiting_dots()
+    print("'Welcome to The Infinite Inn!'")
+    waiting_dots()
+    print("'Where every room is infinite, and every stay is eternal.'")
+    waiting_dots()
+    print("You and your crew decide to take a seat by the fire and warm up for a while.")
+    waiting_dots()
+    print("As you relax, you notice a strange figure in the corner of the room, watching you intently,before at their acknowledgement, approaching you,carry an intent yet jolly smile.")
+    waiting_dots()
+    print("???:Hello,hello new friend, my name is Python the Tenth, and welcome back to my spectacular inn!")
+    waiting_dots()
+    print("Sixth:...erm,sorry but do we know you from somewhere?")
+    waiting_dots()
+    print("Sdventh:Yeah you're acting as if you've known us forever!")
+    waiting_dots()
+    print("Python the Tenth:Oh, please my friends I know many people from far and wide,all who have rested in my inn one or hundreds of times!")
+    waiting_dots()
+    print("Sixth + Seventh:._.")
+    waiting_dots()
+    print("Python the Tenth:And you, my friend, are no exception!")
+    waiting_dots()
+    print("Python the Tenth:You see, my inn is a place of infinite possibilities.You can rest, read, even reimagine your current predicament,it's all down to you!")
+    waiting_dots()
+    print("Python the Tenth:Now, I've unfortunately got matters to attend to,but allow my guest to entertain you!And yes, do help yourself to our refreshments in our bar, Waiter will be tending there tonight.")
+    waiting_dots(3,5)
+    print("Sixth:Well, glads that over, at least we won't rest bored")
+    waiting_dots()
+    print("Seventh:We'll if there's one thing certian, I don't care what user, I'm going to enjoy myself in the bar")
+    waiting_dots()
+    while q2 != "A" or q2 == "B" or q2 == "C":
+        print("""Choices:
+              - A)Rest in the inn
+              - B) Read a book
+              - C) Go to the bar""")
+        q2 = input("").strip().upper()
+        match q2:
+            case "A":
+                break
+            case "B":
+                print("You decide to take the frist book off the shelf,'A Guide To Infinity' and read , which is surprisingly interesting")
+                waiting_dots()
+                if "Memory_fragments" in Inventory:
+                    print("You feel a strange connection to the book, as if you had already experienced this book.")
+                    waiting_dots()
+                    inventory_change(1,"Memory_fragments")
+                    print("You feel a bit more knowledgeable about the concept of infinity.")
+                else:
+                    print("You learn a lot from the book, and feel a bit more knowledgeable about the concept of infinity.")
+                waiting_dots()
+                print("Sixth:Hey you'd been looking that thing for a good while now,must be something real intresting within those pages...")
+                waiting_dots()
+                print("Sixth:Reminds me of the old dungeon libary, where I used to spend my time reading books all the time...yeah those were good times...")
+            case "C":
+                print("You decide to go to the bar with Python the Seventh, where you find a wide selection of drinks and snacks.")
+                waiting_dots()
+                print("You notice a tattered sign that simply reads:")
+                waiting_dots()
+                print("'Loop Bar'")
+                waiting_dots()
+                print("As you approach the bar, the Waiter walks to the bar, blanky waiting for your orders.")
+                waiting_dots()
+                print("Seventh:I'll have....your finest icecream sundae please!")
+                waiting_dots()
+                print("The waiter held the same expression and turned to you ,giving you a old menuchode to order on.")
+                waiting_dots()
+                order = The_Bar()
+                waiting_dots()
 Inventory = {
     "Flashlights":1,
     "Glowing_books":1,
