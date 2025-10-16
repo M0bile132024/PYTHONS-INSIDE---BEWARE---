@@ -237,14 +237,13 @@ time.sleep(1.5)
 Dialogue("*gunshot*")
 time.sleep(3)
 Dialogue("𝘒𝘦𝘦𝘱 𝘧𝘰𝘳𝘨𝘦𝘵𝘵𝘪𝘯𝘨 𝘐 𝘩𝘢𝘷𝘦 𝘵𝘩𝘪𝘴...")
-Dialogue("""To 
-         Be 
+Dialogue("""To
+         Be
          Continued
          Next
          Season...""")
 
 
 
-    
-    
-        
+
+

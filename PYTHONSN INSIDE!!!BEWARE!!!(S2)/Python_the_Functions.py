@@ -9,7 +9,7 @@ def Processing(Processing="Processing",amount_of_dots = 3,waiting_time = 1):
     for i in range(amount_of_dots):
         print(".",end="")
         time.sleep(waiting_time)
-def The_Dungeon_Libary():   
+def The_Dungeon_Libary():
     quitting = 0
     while quitting == 0:
         book_list = []
@@ -152,7 +152,7 @@ def The_Dungeon_Libary():
                     quitting = 1
                     choice = 0
                     checkout = 1
-                    
+
         else:
             print("𝕿𝖍𝖆𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖆 𝖔𝖕𝖙𝖎𝖔𝖓....")
             time.sleep(5)
@@ -160,7 +160,7 @@ def Dungeon_BMI_Checker():
     BMI = 0
     Categorisation = 0
     Advice = 0
-    while Categorisation != "Normal":  
+    while Categorisation != "Normal":
         weight = int(input("𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙩𝙝𝙚 𝘿𝙪𝙣𝙜𝙚𝙤𝙣 𝘽𝙈𝙄 𝘾𝙝𝙚𝙘𝙠𝙚𝙧, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙚𝙣𝙩𝙚𝙧 𝙮𝙤𝙪𝙧 𝙘𝙪𝙧𝙧𝙚𝙣𝙩 𝙬𝙚𝙞𝙜𝙝𝙩(𝙆𝙂 𝙩𝙤 𝙣𝙚𝙖𝙧𝙚𝙨𝙩 𝙬𝙝𝙤𝙡𝙚 𝙣𝙪𝙢𝙗𝙚𝙧):"))
         height = int(input("𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙩𝙝𝙚 𝘿𝙪𝙣𝙜𝙚𝙤𝙣 𝘽𝙈𝙄 𝘾𝙝𝙚𝙘𝙠𝙚𝙧, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙚𝙣𝙩𝙚𝙧 𝙮𝙤𝙪𝙧 𝙘𝙪𝙧𝙧𝙚𝙣𝙩 𝙝𝙚𝙞𝙜𝙝𝙩(𝙈𝙚𝙩𝙚𝙧𝙨 𝙩𝙤 𝙣𝙚𝙖𝙧𝙚𝙨𝙩 𝙬𝙝𝙤𝙡𝙚 𝙣𝙪𝙢𝙗𝙚𝙧):"))
         print("Processing...")
@@ -396,20 +396,19 @@ def SUBSWAY(sizes,bread_type,fillings,location):
     print("|Size", sizes_list[sizes] , "Price" , f"£{sizes_dict[sizes_list[sizes]]}" , "\n","Bread type", bread_type_list[bread_type] , "Price" , f"£{bread_type_dict[bread_type_list[bread_type]]}" , "\n","Fillings", fillings_list[fillings] , "Price" , f"£{fillings_dict[fillings_list[fillings]]}" , "\n" , "Location", location_list[location] , "Percentage change" , f"{(location_dict[location_list[location]]-1)*100:.1f}%" , "\n", "Total cost" , f"£{((sizes_dict[sizes_list[sizes]]+bread_type_dict[bread_type_list[bread_type]]+fillings_dict[fillings_list[fillings]])*location_dict[location_list[location]]):.2f}",sep="|")
 def Dialogue(words):
     print(words)
-    time.sleep(words.split()*0.6)   
+    time.sleep(words.split()*0.6)
 
-    
-    
-            
-            
-        
-        
-          
-          
-    
-        
-        
-        
-        
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
