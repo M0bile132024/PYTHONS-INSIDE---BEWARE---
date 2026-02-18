@@ -1,3 +1,4 @@
+#Python the eleventh:AI POWER ARCADE
 import random
 
 weapons = ["Sword", "Spell", "Fire"]
@@ -57,4 +58,4 @@ while not currentGame.gameOver:
         player.selectWeapon()
         player.selectShield()
         currentGame.newRound()
-        currentGame.takeTurn(human, ai)
+

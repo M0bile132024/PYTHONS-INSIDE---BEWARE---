@@ -2,7 +2,7 @@
 #Python the tenth:Python the tenth's Hockey and Gambling Music store
 #Author:M0bile132022
 #Date:13/10/25
-'''PT6th and 7th, now reliasing that nowhere is safe, decidee they need a damm breather....'''
+'''PT6th and 7th, now reliasing that nowhere is safe, decided they need a damm breather....'''
 import time
 import Python_the_functions_2 as func2
 print("Last time on PYTHONSN INSIDE!!!BEWARE!!!")
@@ -17,7 +17,7 @@ print("Seventh:Oh well,now what?")
 time.sleep(2)
 print("Sixth:Now what!We almost died to some pyschopasth subway server who can trap people in loops!!")
 time.sleep(2)
-print("Sixth:*has a long breather*Perhaps we need a break.Somewhere chilaxing")
+print("Sixth: *has a long breather* Perhaps we need a break.Somewhere chilaxing")
 time.sleep(2)
 print("Seventh:Something...like a hockey and gambling music store!")
 time.sleep(2)
@@ -32,3 +32,7 @@ time.sleep(2)
 print("Sixth:Well lets see whether it's any go-")
 time.sleep(2)
 func2.Python_the_tenths_Hockey_n_Gambling_Music_Store()
+print("And thus your two companions along with a random store owner, Noel, flee into the underdepths of the store, whatever they find there, to be saved for the next episode....")
+print("""To
+    Be
+        Continued""")
