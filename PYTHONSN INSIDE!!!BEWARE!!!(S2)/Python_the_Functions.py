@@ -284,6 +284,7 @@ def PT8th_Ice_cream_truck():
     print("Now move, quick!!!")
     print("And be careful, a lot mess up here....")
     time.sleep(3)
+    checkout_list = []
     while checkout_list[0:3] != random_order_list:
         order_list = []
         checkout_list = []
@@ -320,7 +321,7 @@ def The_Junkie_Gas_Station():
             gas_dose = int(input(f"Alright, how much do you want to pump for your {dose}st/nd/rd/th dose(1-50 gallons):"))
             while gas_dose > 50 or gas_dose < 1:
                 gas_dose = int(input(f"Alright,now that's an invalid dose, let's try that agian(1-50 gallons):"))
-            Processing("Pumping the gas",3,round((gas_dose/10)/3,1))
+            Processing("Pumping the gas", 3, int(round((gas_dose/10)/3, 1)))
             gas_put_in += gas_dose
             print(f"\n{dose}st/nd/rd/th dose sucessfully pumped....\nYou now have {gas_put_in} gallons of gas in your tank")
             dose += 1
@@ -328,7 +329,7 @@ def The_Junkie_Gas_Station():
             gas_dose = int(input(f"Alright, how much do you want to unpump for your {dose}st/nd/rd/th dose(1-50 gallons):"))
             while gas_dose > 50 or gas_dose < 1:
                 gas_dose = int(input(f"Alright,now that's an invalid dose, let's try that agian(1-50 gallons):"))
-            Processing("Unpumping the gas",3,round((gas_dose/10)/3,1))
+            Processing("Unpumping the gas", 3, int(round((gas_dose/10)/3, 1)))
             gas_put_in -= gas_dose
             print(f"\n{dose}st/nd/rd/th dose sucessfully pumped....\nYou now have {gas_put_in} gallons of gas in your tank")
             dose += 1
