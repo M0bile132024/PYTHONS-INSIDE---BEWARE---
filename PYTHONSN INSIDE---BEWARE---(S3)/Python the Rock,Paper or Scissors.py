@@ -51,7 +51,7 @@ def rock_paper_scissors(player_choice,opp_choice):
         return "continue"
     if player_choice >= 1 and player_choice <= 3:
             print(f"You chose: {choices[player_choice-1]}!")
-            print(draw(player_choice))
+            print(draw(choices[player_choice-1]))
             print(f"I chose: {opp_choice}!")
             print(draw(opp_choice))
             print(who_won(player_choice,opp_choice),end='')
