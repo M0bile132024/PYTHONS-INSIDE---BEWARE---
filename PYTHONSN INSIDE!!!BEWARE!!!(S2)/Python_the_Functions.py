@@ -6,9 +6,14 @@ def waiting_dots(amount_of_dots = 3,waiting_time = 1):
         time.sleep(waiting_time)
 def Processing(Processing="Processing",amount_of_dots = 3,waiting_time = 1):
     print(Processing,end="")
-    for i in range(amount_of_dots):
-        print(".",end="")
+    for i in range(amount_of_dots-1):
+        print(".",end=" ")
         time.sleep(waiting_time)
+    print(".")
+    time.sleep(waiting_time)
+def Dialogue(words):
+    print(words)
+    time.sleep(float(len(words.split()))*0.6) 
 def The_Dungeon_Libary():
     quitting = 0
     while quitting == 0:
