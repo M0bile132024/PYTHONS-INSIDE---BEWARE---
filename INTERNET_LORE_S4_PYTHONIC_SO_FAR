@@ -1,0 +1,33 @@
+#Internet_Lore_S4_PYTHONIC_SO_FAR
+#BY M0BILE132022
+#Date: 2025-01-29
+#VER 1
+'''Description:All of Season 1+2 of PYTHONSN INSIDE!!!BEWARE!!! compiled into one program!
+Pythonics compiled so far:'''
+import time
+import subprocess
+while True:
+    print("Welcome to the Pythonic Database!(not canon)")
+    print("""Pythonics compiled so far:
+          1:Python the frist
+          2:Python the second
+          3:Python the third""")
+    pythonic_id = int(input("Enter the Pythonic ID you wish to view: "))
+    if pythonic_id == 1:
+        print("Pythonic ID: 1:Python the frist")
+        print("Description: The first Pythonic ever (REDACTED). It is said that Python the frist wasn't actually the frist Pythonic to ever exist.But that is a story for another day...")
+        time.sleep(3)
+        subprocess.run(["python", "python the frist.py"])
+        print("Python the frist has been executed!")
+    elif pythonic_id == 2:
+        print("Pythonic ID: 2:Python the second")
+        print("Description: The second Pythonic ever (REDACTED). It is said that Python the second was Python the frist's brother. But that is aslo a story for another day...")
+        time.sleep(3)
+        subprocess.run(["python", "python the second.py"])
+        print("Python the second has been executed!")
+    elif pythonic_id == 3:
+        print("Pythonic ID: 3:Python the third")
+        print("Description: The third Pythonic ever (REDACTED).Not much is known about this fella.I'm guessing he's a pretty cool guy,deep within.")
+        subprocess.run(["python", "python the third.py"])
+        print("Python the third has been exeucted!")
+    
