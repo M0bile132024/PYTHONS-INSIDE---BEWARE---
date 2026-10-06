@@ -13,8 +13,8 @@ def Processing(Processing="Processing",amount_of_dots = 3,waiting_time = 1):
     time.sleep(waiting_time)
 def Dialogue(words):
     print(words)
-    time.sleep(float(len(words.split()))*0.6)
-def The_Dungeon_Libary():   
+    time.sleep(float(len(words.split()))*0.6) 
+def The_Dungeon_Libary():
     quitting = 0
     while quitting == 0:
         book_list = []
@@ -157,7 +157,7 @@ def The_Dungeon_Libary():
                     quitting = 1
                     choice = 0
                     checkout = 1
-                    
+
         else:
             print("𝕿𝖍𝖆𝖙 𝖎𝖘 𝖓𝖔𝖙 𝖆 𝖔𝖕𝖙𝖎𝖔𝖓....")
             time.sleep(5)
@@ -165,7 +165,7 @@ def Dungeon_BMI_Checker():
     BMI = 0
     Categorisation = 0
     Advice = 0
-    while Categorisation != "Normal":  
+    while Categorisation != "Normal":
         weight = int(input("𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙩𝙝𝙚 𝘿𝙪𝙣𝙜𝙚𝙤𝙣 𝘽𝙈𝙄 𝘾𝙝𝙚𝙘𝙠𝙚𝙧, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙚𝙣𝙩𝙚𝙧 𝙮𝙤𝙪𝙧 𝙘𝙪𝙧𝙧𝙚𝙣𝙩 𝙬𝙚𝙞𝙜𝙝𝙩(𝙆𝙂 𝙩𝙤 𝙣𝙚𝙖𝙧𝙚𝙨𝙩 𝙬𝙝𝙤𝙡𝙚 𝙣𝙪𝙢𝙗𝙚𝙧):"))
         height = int(input("𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝙩𝙝𝙚 𝘿𝙪𝙣𝙜𝙚𝙤𝙣 𝘽𝙈𝙄 𝘾𝙝𝙚𝙘𝙠𝙚𝙧, 𝙥𝙡𝙚𝙖𝙨𝙚 𝙚𝙣𝙩𝙚𝙧 𝙮𝙤𝙪𝙧 𝙘𝙪𝙧𝙧𝙚𝙣𝙩 𝙝𝙚𝙞𝙜𝙝𝙩(𝙈𝙚𝙩𝙚𝙧𝙨 𝙩𝙤 𝙣𝙚𝙖𝙧𝙚𝙨𝙩 𝙬𝙝𝙤𝙡𝙚 𝙣𝙪𝙢𝙗𝙚𝙧):"))
         print("Processing...")
@@ -289,6 +289,7 @@ def PT8th_Ice_cream_truck():
     print("Now move, quick!!!")
     print("And be careful, a lot mess up here....")
     time.sleep(3)
+    checkout_list = []
     while checkout_list[0:3] != random_order_list:
         order_list = []
         checkout_list = []
@@ -325,7 +326,7 @@ def The_Junkie_Gas_Station():
             gas_dose = int(input(f"Alright, how much do you want to pump for your {dose}st/nd/rd/th dose(1-50 gallons):"))
             while gas_dose > 50 or gas_dose < 1:
                 gas_dose = int(input(f"Alright,now that's an invalid dose, let's try that agian(1-50 gallons):"))
-            Processing("Pumping the gas",3,round((gas_dose/10)/3,1))
+            Processing("Pumping the gas", 3, int(round((gas_dose/10)/3, 1)))
             gas_put_in += gas_dose
             print(f"\n{dose}st/nd/rd/th dose sucessfully pumped....\nYou now have {gas_put_in} gallons of gas in your tank")
             dose += 1
@@ -333,7 +334,7 @@ def The_Junkie_Gas_Station():
             gas_dose = int(input(f"Alright, how much do you want to unpump for your {dose}st/nd/rd/th dose(1-50 gallons):"))
             while gas_dose > 50 or gas_dose < 1:
                 gas_dose = int(input(f"Alright,now that's an invalid dose, let's try that agian(1-50 gallons):"))
-            Processing("Unpumping the gas",3,round((gas_dose/10)/3,1))
+            Processing("Unpumping the gas", 3, int(round((gas_dose/10)/3, 1)))
             gas_put_in -= gas_dose
             print(f"\n{dose}st/nd/rd/th dose sucessfully pumped....\nYou now have {gas_put_in} gallons of gas in your tank")
             dose += 1
@@ -401,20 +402,19 @@ def SUBSWAY(sizes,bread_type,fillings,location):
     print("|Size", sizes_list[sizes] , "Price" , f"£{sizes_dict[sizes_list[sizes]]}" , "\n","Bread type", bread_type_list[bread_type] , "Price" , f"£{bread_type_dict[bread_type_list[bread_type]]}" , "\n","Fillings", fillings_list[fillings] , "Price" , f"£{fillings_dict[fillings_list[fillings]]}" , "\n" , "Location", location_list[location] , "Percentage change" , f"{(location_dict[location_list[location]]-1)*100:.1f}%" , "\n", "Total cost" , f"£{((sizes_dict[sizes_list[sizes]]+bread_type_dict[bread_type_list[bread_type]]+fillings_dict[fillings_list[fillings]])*location_dict[location_list[location]]):.2f}",sep="|")
 def Dialogue(words):
     print(words)
-    time.sleep(words.split()*0.6)   
+    time.sleep(words.split()*0.6)
 
-    
-    
-            
-            
-        
-        
-          
-          
-    
-        
-        
-        
-        
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
